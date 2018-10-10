@@ -5,6 +5,7 @@ const ts = require('gulp-typescript');
 const plumber = require('gulp-plumber');
 
 
+
 gulp.task('style', function () {
     gulp.src('./src/css/index.styl')
     .pipe(plumber())
@@ -36,3 +37,5 @@ gulp.task('start', ['pug', 'style', 'script']);
 gulp.task('watch', function () {
     gulp.watch('./src/**/*', ['start']);
 })
+
+gulp.task('default',['start','watch'])

@@ -8,18 +8,9 @@ header(class='header_main')
                     div(class='main_logo_text') fo
                             span cal 
             nav(class='header_main_nav')
-                    ul
+                ul
+                    each item in ['home','about me','skills','resume','testimonials','portfolio','contact me']
                         li
-                            a(href="#") home
-                        li
-                            a(href="#") about me 
-                        li
-                            a(href="#") skills 
-                        li
-                            a(href="#") resume 
-                        li
-                            a(href="#") testimonials 
-                        li
-                            a(href="#") portfolio 
-                        li
-                            a(href="#") contact me 
+                            a(href="#") #{item}
+                    
+                    
