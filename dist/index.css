@@ -12,6 +12,7 @@
   padding: 0;
   width: 100%;
   box-sizing: border-box;
+  font-size: 0;
 }
 .header_main_img img {
   margin: 0;
