@@ -85,8 +85,43 @@
   padding: 0;
 }
 .interests {
+  display: flex;
   margin: 0 auto;
   min-width: 800px;
   max-width: 1600px;
   background: #fff;
+  justify-content: space-evenly;
+}
+.interest_item {
+  min-width: 200px;
+  max-width: 360px;
+}
+.interest_item h2 {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-family: Roboto;
+  color: #556366;
+  font-size: 1.875em; /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 0.8; /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  text-transform: uppercase;
+}
+.interest_item p {
+  margin: 0;
+  margin-bottom: 96px;
+  font-family: Roboto;
+  color: #919191;
+  font-size: 1.125em; /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 1.667; /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+.about {
+  display: flex;
+  margin: 0 auto;
+  min-width: 800px;
+  max-width: 1600px;
+  background: #f2f2f1;
+  justify-content: space-evenly;
 }
