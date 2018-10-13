@@ -31,7 +31,7 @@
   display: flex;
   align-items: center;
 }
-.main_logo {
+.header_main_logo .main_logo_img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +40,7 @@
   height: 42px;
   margin-right: 20px;
 }
-.main_logo_text {
+.header_main_logo .main_logo_text {
   color: #fff;
   text-transform: uppercase;
   font-family: Roboto;
@@ -49,11 +49,11 @@
   line-height: 1.4; /* Приближение из-за подстановки шрифтов */
   text-align: center;
 }
-.main_logo_text span {
+.header_main_logo .main_logo_text span {
   color: #2ecc71;
   text-transform: uppercase;
 }
-.main_logo span img {
+.header_main_logo .main_logo_text span img {
   margin: 0 auto;
 }
 .header_main_nav {
@@ -61,19 +61,6 @@
   justify-content: center;
   align-items: center;
   min-width: 800px;
-}
-.header_main_nav a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #fff;
-  font-family: Roboto;
-  font-size: 1em; /* Приближение из-за подстановки шрифтов */
-  font-weight: 700;
-  line-height: 1.875; /* Приближение из-за подстановки шрифтов */
-  text-align: left;
-}
-.header_main_nav a:hover {
-  color: #2ecc71;
 }
 .header_main_nav ul {
   display: flex;
@@ -83,6 +70,19 @@
   justify-content: space-around;
   width: 100%;
   padding: 0;
+}
+.header_main_nav ul a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 1em; /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 1.875; /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+.header_main_nav ul a:hover {
+  color: #2ecc71;
 }
 .interests {
   display: flex;
@@ -125,9 +125,6 @@
   background: #f2f2f1;
   justify-content: space-evenly;
 }
-.about_article {
-  margin-bottom: 70px;
-}
 .about_img {
   margin: 0;
   padding: 0;
@@ -148,7 +145,7 @@
 }
 .about_items h2 {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
   font-family: Roboto;
   color: #556366;
   font-size: 1.875em; /* Приближение из-за подстановки шрифтов */
@@ -175,7 +172,7 @@
 }
 .about_skills_item_article h3 {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 20px;
   font-family: Roboto;
   color: #556366;
   font-size: 1.375em; /* Приближение из-за подстановки шрифтов */
@@ -186,7 +183,6 @@
 }
 .about_skills_item_article p {
   margin: 0;
-  margin-bottom: 50px;
   font-family: Roboto;
   color: #919191;
   font-size: 1.125em; /* Приближение из-за подстановки шрифтов */
@@ -201,7 +197,108 @@
   margin: 0;
   min-width: 200px;
   max-width: 320px;
+  margin-top: 50px;
 }
 .about_skills_item_article {
   margin-left: 30px;
+}
+.skills {
+  display: flex;
+  margin: 0 auto;
+  padding: 100px 0 100px 0;
+  min-width: 800px;
+  max-width: 1600px;
+  background: #fff;
+  justify-content: center;
+}
+.skills .my_skills {
+  display: flex;
+  margin: 0;
+  max-width: 550px;
+  min-width: 300px;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-right: 90px;
+}
+.skills .my_skills h2 {
+  font-family: Roboto;
+  color: #556366;
+  font-size: 1.875em; /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 0.8; /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0;
+}
+.skills .my_skills p {
+  font-family: Roboto;
+  color: #919191;
+  font-size: 1.125em; /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 1.667; /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  margin: 0;
+  margin-top: 50px;
+}
+.skills .my_skills_button {
+  margin-top: 50px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #2ecc71;
+  box-sizing: border-box;
+  background-color: rgba(46,204,113,0);
+  width: 185px;
+  height: 56px;
+  font-family: Roboto;
+  color: rgba(46,204,113,0.75);
+  font-size: 1.125em; /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 1.333; /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  text-transform: uppercase;
+}
+.skills .skills_progress {
+  display: flex;
+  margin: 0;
+  max-width: 850px;
+  min-width: 300px;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.skills .skills_progress .skills_progress_item {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  max-width: 850px;
+  min-width: 300px;
+  margin-top: 40px;
+}
+.skills .skills_progress .skills_progress_item h3 {
+  font-family: Roboto;
+  color: #556366;
+  font-size: 1.375em; /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 1.091; /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.skills .skills_progress .skills_progress_item_bar {
+  display: flex;
+  background-color: #f2f2f1;
+  width: 560px;
+  height: 30px;
+}
+.skills .skills_progress .skills_progress_item_bar_scale {
+  width: 100%;
+  padding-right: 10px;
+  background-color: #2ecc71;
+  font-family: Roboto;
+  color: #fff;
+  font-size: 1.125em; /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 1.667; /* Приближение из-за подстановки шрифтов */
+  text-align: right;
+  box-sizing: border-box;
 }
