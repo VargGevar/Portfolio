@@ -1,14 +1,15 @@
-header(class='header_main')
-	div(class='header_main_img')
+header.header_main
+	div.header_main_img
 		img(src='../src/img/main-img.png', alt='main-img')                               
-	div(class='header_main_footer')
-		div(class='header_main_logo')
-			div(class='main_logo_img')
-				img(src="../src/img/logo-text.svg", alt="logo", srcset="") 
-			div(class='main_logo_text') fo
-				span cal 
-		nav(class='header_main_nav')
-			ul
-				each item in ['home','about me','skills','resume','testimonials','portfolio','contact me']
-					li
-						a(href="#") #{item}    
+	div.header_main_footer_wrapper
+		div.header_main_footer.container
+			div.header_main_logo
+				div.main_logo_img
+					img(src="../src/img/logo-text.svg", alt="logo") 
+				div.main_logo_text fo
+					span cal 
+			nav.header_main_nav
+				ul
+					each item in ['home', 'about me', 'skills', 'resume', 'testimonials', 'portfolio', 'contact me']
+						li
+							a(href="#") #{item}    

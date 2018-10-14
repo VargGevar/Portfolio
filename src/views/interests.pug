@@ -1,10 +1,5 @@
-article(class='interests')
-	article(class='interest_item')
-		h2 values
-		p Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est. 
-	article(class='interest_item')
-		h2 goals
-		p Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.
-	article(class='interest_item')
-		h2 hobbies
-		p Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.
+article.interests.container
+	each article in ['values', 'goals', 'hobbies']
+		article.interest_item
+			h2.interest_item_header #{article}
+			p.interest_item_text Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est. 

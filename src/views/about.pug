@@ -1,25 +1,24 @@
-article(class='about')
-	div(class='about_img')
+article.about
+	div.about_img
 		img(src="../src/img/about-main-img.png", alt="aboutme-img")
-	div(class='about_items')
-		article(class='about_article')
+	div.about_items
+		article.about_article
 			h2 about me
 			p Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. 
 			p Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei.
-		div(class='about_skills')
+		div.about_skills
 			-
 				let skills = [
-					{img:"../src/img/icon-web-design.svg",header:'web design',alt:'icon_design'},
-					{img:"../src/img/icon-graphic-design.svg",header:'graphic design',alt:'icon_graphic_design'},
-					{img:"../src/img/icon-online-marketing.svg",header:'online marketing',alt:'online-marketing'},
-					{img:"../src/img/icon-seo.svg",header:'seo',alt:'icon_seo'},
-					
+					{ img: "../src/img/icon-web-design.svg", header:'web design', alt: 'icon_design' },
+					{ img: "../src/img/icon-graphic-design.svg", header: 'graphic design', alt: 'icon_graphic_design' },
+					{ img: "../src/img/icon-online-marketing.svg", header: 'online marketing', alt: 'online-marketing' },
+					{ img: "../src/img/icon-seo.svg", header: 'seo', alt: 'icon_seo' }
 				]
 			each item in skills
-				article(class='about_skills_item')
-					div(class='about_skills_item_icon')
+				article.about_skills_item
+					div.about_skills_item_icon
 						img(src=`${item.img}`, alt=`${item.alt}`)
-					article(class='about_skills_item_article')
+					article.about_skills_item_article
 						h3 #{item.header}
 						p Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.
 			

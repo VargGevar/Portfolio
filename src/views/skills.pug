@@ -1,29 +1,19 @@
-article(class='skills')
-	article(class='my_skills')
+article.skills.container
+	article.my_skills
 		h2 my skills
-		p 
-			|Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, 
-			| te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, 
-			| cum ne periculis molestiae pri.
-		p
-			| Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.
-		button(class='my_skills_button') contact me  
-	div(class='skills_progress')
+		p Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri.
+		p Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.
+		button.my_skills_button contact me  
+	div.skills_progress
 		-
 			let skillBars = [
-				{header:'Photoshop',text:'90%',width:'90%'},
-				{header:'Illustrator',text:'80%',width:'80%'},
-				{header:'HTML / CSS',text:'90%',width:'90%'},
-				{header:'PHP / MYSQL',text:'70%',width:'70%'},
-
+				{ header: 'Photoshop', text: '90%', width: '90%' },
+				{ header: 'Illustrator', text: '80%', width: '80%' },
+				{ header: 'HTML / CSS', text: '90%', width: '90%' },
+				{ header: 'PHP / MYSQL', text: '70%', width: '70%' },
 			]
 		each item in skillBars
-			div(class='skills_progress_item') 
+			divskills_progress_item
 				h3 #{item.header}
-				div(class='skills_progress_item_bar')
-					div(class='skills_progress_item_bar_scale' style=`width:${item.width}`) #{item.text}
-					 
-		
-			
-		
-				
+				div.skills_progress_item_bar
+					div(style=`width:${item.width}`).skills_progress_item_bar_scale #{item.text}

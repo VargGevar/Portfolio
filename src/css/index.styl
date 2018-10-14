@@ -2,140 +2,48 @@ main_color_1 = white
 main-color_2 = #2ecc71
 main-color_3 = #252e30
 
-@font-face
-  font-family: 'Roboto', 'sans-serif'
-  src: 'https://fonts.googleapis.com/css?family=Roboto:400,500,700'
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,500,700'
 
+.container
+  margin: 0 auto
+  max-width 1180px
+  width 100%
 
-.header_main
-  margin 0 auto
-  min-width 800px
-  max-width 1600px
-        
-  &_img
-    margin 0
-    padding: 0
-    width: 100%;
-    box-sizing: border-box
-    font-size: 0
+  &.fluid
+    max-width 1600px
 
-    img
-      margin: 0
-      width: 100%;
-      object-fit: contain
-
-  &_footer
-    width: 100%;
-    display: flex;
-    background: main-color_3
-    height: 70px;
-    justify-content: space-evenly;
-
-  &_logo
-    min-width: 100px
-    display: flex
-    align-items: center
-
-    .main_logo_img
-      display: flex
-      justify-content: center
-      align-items: center
-      background-color: #4b5456;
-      width: 42px;
-      height: 42px;
-      margin-right: 20px;
-
-    .main_logo_text
-      color main_color_1
-      text-transform: uppercase
-      font-family: Roboto;
-      font-size: 1.875em;/* Приближение из-за подстановки шрифтов */
-      font-weight: 700;
-      line-height: 1.4;/* Приближение из-за подстановки шрифтов */
-      text-align: center;
-
-      span 
-        color main-color_2
-        text-transform: uppercase
-
-      & span img 
-        margin: 0 auto;
-
-  &_nav
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 800px;
-
-    ul
-      display: flex
-      align-items: center
-      list-style: none
-      margin: 0
-      justify-content space-around 
-      width: 100%
-      padding: 0
-
-      a
-        text-transform: uppercase
-        text-decoration: none;
-        color: main_color_1
-        font-family: Roboto;
-        font-size: 1em; /* Приближение из-за подстановки шрифтов */
-        font-weight: 700;
-        line-height: 1.875; /* Приближение из-за подстановки шрифтов */
-        text-align: left;
-
-      a:hover
-        color main-color_2
-
-  
+@require 'header'
 
 .interests
   display: flex
-  margin 0 auto
-  min-width 800px
-  max-width 1600px
   background: #ffffff
-  justify-content: space-evenly
+  justify-content: space-between
+  margin-bottom: 90px
 
 .interest_item
   min-width 200px
   max-width 360px
 
-  h2
-    margin-top: 100px
-    margin-bottom: 50px;
-    font-family: Roboto;
+  &_header
+    margin-bottom: 50px
     color: #556366;
-    font-size: 1.875em; /* Приближение из-за подстановки шрифтов */
-    font-weight: 700;
-    line-height: 0.8; /* Приближение из-за подстановки шрифтов */
-    text-align: left;
+    font: 700 1.875em/0.8 Roboto
     text-transform: uppercase
 
-  p
+  &_text
+    color: #919191
     margin 0
-    margin-bottom: 96px
-    font-family: Roboto;
-    color: #919191;
-    font-size: 1.125em; /* Приближение из-за подстановки шрифтов */
-    font-weight: 400;
-    line-height: 1.667; /* Приближение из-за подстановки шрифтов */
-    text-align: left;
+    font: 400 1.125em/1.667 Roboto
 
 .about
   display: flex
-  margin 0 auto
-  min-width 800px
-  max-width 1600px
   background: #f2f2f1
   justify-content: space-evenly
   
 .about_img
   margin 0
   padding: 0
-  width: 100%;
+  width: 100%
   box-sizing: border-box
   font-size: 0
   flex-shrink: 1.3
@@ -212,10 +120,7 @@ main-color_3 = #252e30
 
 .skills
   display: flex
-  margin 0 auto
   padding: 100px 0 100px 0
-  min-width 800px
-  max-width 1600px
   background: #ffffff
   justify-content: center
 
