@@ -55,7 +55,7 @@ main-color_3 = #252e30
 
 .about_items
   max-width: 700px;
-  padding: 100px 200px 0px 100px;
+  padding: 100px 200px 100px 100px;
   flex-grow: 3;
 
   h2
@@ -78,7 +78,9 @@ main-color_3 = #252e30
     font-weight: 400;
     line-height: 1.667; /* Приближение из-за подстановки шрифтов */
     text-align: left;
-
+  
+  .about_article p:last-child
+    margin-bottom: 0
  
 .about_skills
     display: flex;
@@ -113,7 +115,7 @@ main-color_3 = #252e30
   margin: 0
   min-width 200px
   max-width: 320px
-  margin-top: 50px
+  margin-top: 45px
 
 .about_skills_item_article
   margin-left: 30px;
@@ -122,7 +124,7 @@ main-color_3 = #252e30
   display: flex
   padding: 100px 0 100px 0
   background: #ffffff
-  justify-content: center
+  justify-content: space-between
 
   .my_skills
     display: flex
@@ -131,8 +133,7 @@ main-color_3 = #252e30
     min-width: 300px
     justify-content: flex-start
     flex-direction: column
-    margin-right: 90px
-
+    
     h2
       font-family: Roboto;
       color: #556366;

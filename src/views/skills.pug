@@ -13,7 +13,7 @@ article.skills.container
 				{ header: 'PHP / MYSQL', text: '70%', width: '70%' },
 			]
 		each item in skillBars
-			divskills_progress_item
+			div.skills_progress_item
 				h3 #{item.header}
 				div.skills_progress_item_bar
 					div(style=`width:${item.width}`).skills_progress_item_bar_scale #{item.text}

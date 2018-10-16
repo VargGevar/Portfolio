@@ -1,6 +1,21 @@
 header.header_main
-	div.header_main_img
-		img(src='../src/img/main-img.png', alt='main-img')                               
+	div.container
+		div.button_controller
+			each item in ['slide1', 'slide2', 'slide3']
+				div.slide_controller
+	div.header_main_slider
+		-
+			let slides = [
+				{header:'Web & Graphic Designer',img:'url("../src/img/main-img.png")'},
+				{header:'Five years experience',img:'url("../src/img/experience.jpg")'},
+				{header:'Supervisor manager',img:'url("../src/img/supervisor.jpg")'}
+			]
+		each item,index in slides
+			div.header_main_slider_slide(style=`background-image:${item.img}` class=`${index===0?'active':''}`)
+				div.header_main_slider_slide_title
+					h1 #{item.header}
+				button.header_main_slider_slide_button Learn More
+	
 	div.header_main_footer_wrapper
 		div.header_main_footer.container
 			div.header_main_logo
