@@ -1,0 +1,41 @@
+article.edu_work
+  article.edu_work_item.container
+    article.edu_work_item_education
+      div.edu_work_item_education_header
+        h2 My Education
+        p Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri.
+        p Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.
+      div.edu_work_item_education_content
+        -
+          let dimploma = [
+            {header: 'Graphic Design Diploma', collegeName: 'Reeves College  /', period: 'June 2008 - May 2010', grade: '4.0 GPA'},
+            {header: 'CIT Diploma', collegeName: 'Lethbridge College  /', period: 'June 2006 - May 2008', grade: '4.0 GPA'}
+          ]
+        each item in dimploma
+          div.edu_work_item_education_content_item
+            div.edu_work_item_education_content_item_header
+              h3 #{item.header}
+              p #{item.collegeName} 
+                span #{item.period}
+              span.grade #{item.grade}
+            p.edu_work_item_education_content_item_footer Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.
+    article.edu_work_item_education
+      div.edu_work_item_education_header
+        h2 Work Experience
+        p Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri.
+        p Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.
+      div.edu_work_item_education_content
+        -
+          let experience = [
+            {header: 'Lead WEb Designer', collegeName: 'ABC Company, Saskatoon  /', period: 'June 2011 - Present', grade: '3 Years'},
+            {header: 'Junior Designer', collegeName: 'XYZ Company, Lethbridge  /', period: 'June 2008 - May 2009', grade: '1 Years'},
+            {header: 'Web Developer', collegeName: 'The Company, Lethbridge  /', period: 'June 2007 - May 2008', grade: '1 Years'}
+          ]
+        each item in experience
+          div.edu_work_item_education_content_item
+            div.edu_work_item_education_content_item_header
+              h3 #{item.header}
+              p #{item.collegeName} 
+                span #{item.period}
+              span.grade #{item.grade}
+            p.edu_work_item_education_content_item_footer Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.

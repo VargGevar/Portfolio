@@ -326,6 +326,10 @@
   text-align: center;
   text-transform: uppercase;
 }
+.skills .my_skills_button:hover {
+  color: #0f8542;
+  border-color: #0f8542;
+}
 .skills .skills_progress {
   display: flex;
   margin: 0;
@@ -370,4 +374,182 @@
   line-height: 1.667; /* Приближение из-за подстановки шрифтов */
   text-align: right;
   box-sizing: border-box;
+}
+.resume {
+  background-color: #f2f2f1;
+  width: 100%;
+  position: relative;
+}
+.resume::after {
+  content: '';
+  left: calc(50% - 35px);
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px;
+  border-right-width: 30px;
+  border-left-width: 30px;
+  border-color: #f2f2f1 transparent transparent transparent;
+  position: absolute;
+}
+.resume .resume_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 75px 100px 75px;
+  box-sizing: border-box;
+}
+.resume .resume_items h2 {
+  font-family: Roboto;
+  color: #556366;
+  font-size: 1.875em; /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 0.8; /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  text-transform: uppercase;
+}
+.resume .resume_items p {
+  font-family: Roboto;
+  color: #919191;
+  font-size: 1.125em; /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 1.667; /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  margin-bottom: 45px;
+}
+.resume .resume_items_button {
+  font-family: Roboto;
+  color: rgba(46,204,113,0.75);
+  font-size: 1.125em; /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 1.333; /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #2ecc71;
+  box-sizing: border-box;
+  background-color: rgba(46,204,113,0);
+  width: 215px;
+  height: 56px;
+  text-transform: uppercase;
+}
+.resume .resume_items_button:hover {
+  color: #0f8542;
+  border-color: #0f8542;
+}
+.edu_work {
+  background-color: #fff;
+}
+.edu_work_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.edu_work_item_education {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 90px;
+  margin-bottom: 90px;
+  border-bottom: 1px solid #ccc;
+}
+.edu_work_item_education_header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 550px;
+}
+.edu_work_item_education_header h2 {
+  font-family: Roboto;
+  color: #556366;
+  font-size: 1.875em; /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 0.8; /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0 0 45px 0;
+}
+.edu_work_item_education_header p {
+  font-family: Roboto;
+  color: #919191;
+  font-size: 1.125em; /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 1.667; /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  margin: 0 0 45px 0;
+}
+.edu_work_item_education_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 550px;
+}
+.edu_work_item_education_content_item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-top: 70px;
+}
+.edu_work_item_education_content_item_header {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+.edu_work_item_education_content_item_header h3 {
+  font-family: Roboto;
+  color: #556366;
+  font-size: 1.375em; /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 1.091; /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
+}
+.edu_work_item_education_content_item_header p {
+  font-family: Roboto;
+  color: #919191;
+  font-size: 1.125em; /* Приближение из-за подстановки шрифтов */
+  font-weight: 500;
+  line-height: 1.667; /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.edu_work_item_education_content_item_header p span {
+  font-family: Roboto;
+  color: #919191;
+  font-size: 1.125em; /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 1.667; /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+.edu_work_item_education_content_item_header .grade {
+  font-family: Roboto;
+  color: #fff;
+  font-size: 0.875em; /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: center;
+  background-color: #2ecc71;
+  width: 71px;
+  padding: 5px 0 5px 0;
+}
+.edu_work_item_education_content_item_footer {
+  font-family: Roboto;
+  color: #919191;
+  font-size: 1.125em; /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 1.667; /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  margin: 0;
+}
+.edu_work .edu_work_item article:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }

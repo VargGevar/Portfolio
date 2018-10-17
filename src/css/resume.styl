@@ -1,0 +1,63 @@
+.resume
+  background-color: #f2f2f1;
+  width: 100%;
+  position relative
+
+  &::after
+      content: ''
+      left: calc(50% - 35px)
+      top: 100%
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 20px
+      border-right-width: 30px 
+      border-left-width: 30px 
+      border-color: #f2f2f1 transparent transparent transparent
+      position: absolute
+
+  .resume_items
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 100px 75px 100px 75px
+    box-sizing: border-box
+
+    h2
+      font-family: Roboto;
+      color: #556366;
+      font-size: 1.875em; /* Приближение из-за подстановки шрифтов */
+      font-weight: 700;
+      line-height: 0.8; /* Приближение из-за подстановки шрифтов */
+      text-align: center;
+      text-transform: uppercase
+
+    p
+      font-family: Roboto;
+      color: #919191;
+      font-size: 1.125em; /* Приближение из-за подстановки шрифтов */
+      font-weight: 400;
+      line-height: 1.667; /* Приближение из-за подстановки шрифтов */
+      text-align: center;
+      margin-bottom: 45px
+
+    &_button
+      font-family: Roboto;
+      color: rgba(46, 204, 113, 0.75);
+      font-size: 1.125em; /* Приближение из-за подстановки шрифтов */
+      font-weight: 700;
+      line-height: 1.333; /* Приближение из-за подстановки шрифтов */
+      text-align: center;
+      border-style: solid;
+      border-width: 3px;
+      border-color: #2ecc71;
+      box-sizing: border-box;
+      background-color: rgba(46, 204, 113, 0);
+      width: 215px;
+      height: 56px;
+      text-transform: uppercase
+
+      &:hover
+        color: #0F8542;
+        border-color: #0F8542;
