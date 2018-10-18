@@ -3,6 +3,9 @@ const stylus = require('gulp-stylus')
 const pug = require('gulp-pug')
 const ts = require('gulp-typescript')
 const plumber = require('gulp-plumber')
+const sync = require('browser-sync')
+const browser = sync.create()
+
 
 gulp.task('style', () => {
 
@@ -35,8 +38,14 @@ gulp.task('pug', () => {
 
 })
 
-gulp.task('start', ['pug', 'style', 'script'])
+gulp.task('start', ['pug', 'style', 'script', 'assets'])
 
-gulp.task('watch', () => gulp.watch('./src/**/*', ['start']))
+gulp.task('watch', () => {
+  gulp.watch('./src/**/*', ['start'], () => browser.sync() )
+}) 
 
-gulp.task('default', ['start', 'watch'])
+gulp.task('default', ['browser', 'start', 'watch'])
+
+gulp.task('browser', () => browser.init({server: './dist'}))
+
+gulp.task('assets', () => gulp.src('./src/assets/*') .pipe(gulp.dest('./dist/assets')))

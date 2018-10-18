@@ -1,0 +1,22 @@
+article.portfolio
+  article.portfolio_item.container
+    h2 Portfolio
+    p Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri.
+    div.portfolio_item_content
+      -
+        let content = [
+          { img: "assets/portfolio_img_1.png", alt: "img_1" },
+          { img: "assets/portfolio_img_2.png", alt: "img_2" },
+          { img: "assets/portfolio_img_3.png", alt: "img_3" },
+          { img: "assets/portfolio_img_4.png", alt: "img_4" },
+          { img: "assets/portfolio_img_5.png", alt: "img_5" },
+          { img: "assets/portfolio_img_6.png", alt: "img_6" },
+          { img: "assets/portfolio_img_7.png", alt: "img_7" },
+          { img: "assets/portfolio_img_8.png", alt: "img_8" },
+          { img: "assets/portfolio_img_9.png", alt: "img_9" }
+        ]
+      each item in content
+        img(src=`${item.img}`, alt=`${item.alt}`)
+
+
+        

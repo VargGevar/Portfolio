@@ -553,3 +553,80 @@
   padding-bottom: 0;
   margin-bottom: 0;
 }
+.reviews {
+  background-color: #f2f2f1;
+}
+.reviews_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.reviews_item p {
+  font-family: Roboto;
+  color: #919191;
+  font-size: 1.5em; /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 1.5; /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  margin: 0;
+  margin-bottom: 45px;
+  font-style: italic;
+  width: 1060px;
+}
+.reviews_item span {
+  font-family: Roboto;
+  color: #566366;
+  font-size: 1.125em; /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 2; /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+.portfolio {
+  background-color: #fff;
+}
+.portfolio_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.portfolio_item h2 {
+  font-family: Roboto;
+  color: #556366;
+  font-size: 1.875em; /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 0.8; /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 45px;
+}
+.portfolio_item p {
+  font-family: Roboto;
+  color: #919191;
+  font-size: 1.125em; /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 1.667; /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  width: 1020px;
+  margin: 0;
+  margin-bottom: 95px;
+}
+.portfolio_item_content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.portfolio_item_content img {
+  margin-bottom: 40px;
+}
+.portfolio_item_content img:nth-child(n+7):nth-child(-n+9) {
+  margin-bottom: 0;
+}

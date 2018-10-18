@@ -1,6 +1,6 @@
 article.about
 	div.about_img
-		img(src="../src/img/about-main-img.png", alt="aboutme-img")
+		img(src="assets/about-main-img.png", alt="aboutme-img")
 	div.about_items
 		article.about_article
 			h2 about me
@@ -9,10 +9,10 @@ article.about
 		div.about_skills
 			-
 				let skills = [
-					{ img: "../src/img/icon-web-design.svg", header:'web design', alt: 'icon_design' },
-					{ img: "../src/img/icon-graphic-design.svg", header: 'graphic design', alt: 'icon_graphic_design' },
-					{ img: "../src/img/icon-online-marketing.svg", header: 'online marketing', alt: 'online-marketing' },
-					{ img: "../src/img/icon-seo.svg", header: 'seo', alt: 'icon_seo' }
+					{ img: "assets/icon-web-design.svg", header:'web design', alt: 'icon_design' },
+					{ img: "assets/icon-graphic-design.svg", header: 'graphic design', alt: 'icon_graphic_design' },
+					{ img: "assets/icon-online-marketing.svg", header: 'online marketing', alt: 'online-marketing' },
+					{ img: "assets/icon-seo.svg", header: 'seo', alt: 'icon_seo' }
 				]
 			each item in skills
 				article.about_skills_item
