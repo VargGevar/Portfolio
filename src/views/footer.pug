@@ -1,0 +1,16 @@
+article.footer
+  article.footer_item.container
+    span Copyright 2014 Focal - Built With Passion
+    div.footer_item_social
+        -
+          let social = [
+            {src:'assets/icon-twitter.svg', alt:'twitter-icon'},
+            {src:'assets/icon-facebook.svg',  alt:'facebook-icon'},
+            {src:'assets/icon-pinterest.svg',  alt:'pinterest-icon'},
+            {src:'assets/icon-google.svg',  alt:'google-icon'},
+            {src:'assets/icon-dribble.svg',  alt:'dribble-icon'},
+            {src:'assets/icon-linkedin.svg',  alt:'linkedin-icon'}
+          ]
+        each item in social
+          a(href='#')
+            img(src=`${item.src}`, alt=`${item.alt}`)

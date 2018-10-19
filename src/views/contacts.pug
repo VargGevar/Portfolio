@@ -1,0 +1,26 @@
+article.contacts
+  article.contacts_item.container
+    div.contacts_item_content
+      h2 Contact Me
+      p Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.
+      p 122 33rd Street East Saskatoon, SK S7K 1R9
+      p.contacts_item_content_span Email: 
+        span info@focal.com
+      p.contacts_item_content_span Phone:
+        span 1-306-222-2323
+    div.contacts_item_inputs
+      -
+        let inputs = [
+          { name: 'Name', span: '*'},
+          { name: 'Email Address', span: '*'}
+        ]
+      each item in inputs
+        label(for="Name") #{item.name} 
+          span #{item.span}
+        input(type="text" name="Name")
+
+      label(for="Email") Email Address 
+        span *
+      textarea(name="Emai", cols="50", rows="10")
+      button.contacts_item_inputs_button Contact Me
+         

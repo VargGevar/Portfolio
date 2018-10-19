@@ -1,0 +1,41 @@
+.footer
+  background-color: #191f21;
+
+  &_item
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 50px
+    padding-bottom: 50px
+    justify-content: center
+
+    span
+      font-family: Roboto;
+      color: #4b5456;
+      font-size: 0.875em; /* Приближение из-за подстановки шрифтов */
+      font-weight: 500;
+      line-height: 2.143; /* Приближение из-за подстановки шрифтов */
+      text-align: left;
+      text-transform: uppercase
+      margin: 0
+      margin-bottom: 30px
+
+    &_social
+      width: 260px;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      a
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background-color: #4b5456;
+
+      &:hover img
+        fill #ffffff
