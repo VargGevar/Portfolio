@@ -15,26 +15,35 @@
 
 
   const portfolio = document.querySelectorAll('.portfolio_item_content > img')
-  // const modal = document.createElement('div')
-  // modal.classList.add('modal', 'hidden')
-  // document.body.appendChild(modal)
-
-  // function modalWindow(el: number) {
-  //   modal.classList.add('hidden')
-  //   portfolio[current].classList.remove('modal')
-  //   current = el
-  //   modal.classList.remove('hidden')
-  //   portfolio[current].classList.add('modal')
-  // }
-
-  // for (let j = 0; j < portfolio.length; j++) portfolio[j].addEventListener('click', () => modalWindow(j))
-
   const modal = document.querySelector('.modal')
   const background = document.querySelector('.background')
+  const content = document.querySelector('.content')
+  
+  
+
   if (!modal || !background) { return }
   background.addEventListener('click', () => modal.classList.add('hidden'))
   for (let j = 0; j < portfolio.length; j++)
     portfolio[j].addEventListener('click', () => modal.classList.remove('hidden'))
+
+
+  const button = document.querySelector('.contacts_item_inputs > button')
+  const inputs = document.querySelectorAll('.contacts_item_inputs > input')
+  const input1 = inputs[0]
+  const input2 = inputs[1]
+  const textareas = document.querySelectorAll('.contacts_item_inputs > textarea')
+  const textarea = textareas[0]
+  
+  if (!button || !modal || !background || !content) { return }
+  background.addEventListener('click', () => modal.classList.add('hidden'))
+  button.addEventListener('click', function () {
+    modal.classList.remove('hidden')
+    let text1 = input1.value
+    let text2 = input2.value
+    let text3 = textarea.value
+    content.innerHTML = `<div><p>Добрый день, ${text1}!<br>Спасибо что обратили внимание на мой сайт.<br>Резюме будет отправлено вам на email: ${text2}</p><p>${text3}</p></div>`
+  })  
+  
 
 })()
 

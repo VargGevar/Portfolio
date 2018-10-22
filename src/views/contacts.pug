@@ -3,7 +3,7 @@ article.contacts
     div.contacts_item_content
       h2 Contact Me
       p Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.
-      p 122 33rd Street East Saskatoon, SK S7K 1R9
+      p 122 33rdStreet East#[br] Saskatoon, SK#[br] S7K 1R9
       p.contacts_item_content_span Email: 
         span info@focal.com
       p.contacts_item_content_span Phone:
@@ -11,16 +11,15 @@ article.contacts
     div.contacts_item_inputs
       -
         let inputs = [
-          { name: 'Name', span: '*'},
-          { name: 'Email Address', span: '*'}
+          { text: 'Name', span: '*', name: 'name'},
+          { text: 'Email Address', span: '*', name: 'email'}
         ]
       each item in inputs
-        label(for="Name") #{item.name} 
+        label(for=`${item.name}`) #{item.text} 
           span #{item.span}
-        input(type="text" name="Name")
+        input(type="text" name=`${item.name}`)
 
-      label(for="Email") Email Address 
+      label(for="description") Description 
         span *
-      textarea(name="Emai", cols="50", rows="10")
+      textarea(name="description", cols="50", rows="10")
       button.contacts_item_inputs_button Contact Me
-         
